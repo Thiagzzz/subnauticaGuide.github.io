@@ -4,80 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia 4546B</title>
-     <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-
-    <!-- BURBUJAS DECORATIVAS DE FONDO -->
+ 
     <div class="bubble" style="left: 10%; width: 15px; height: 15px; animation-duration: 8s; animation-delay: 0s;"></div>
     <div class="bubble" style="left: 25%; width: 8px; height: 8px; animation-duration: 11s; animation-delay: 3s;"></div>
     <div class="bubble" style="left: 45%; width: 12px; height: 12px; animation-duration: 9s; animation-delay: 1s;"></div>
     <div class="bubble" style="left: 65%; width: 20px; height: 20px; animation-duration: 13s; animation-delay: 2s;"></div>
     <div class="bubble" style="left: 85%; width: 10px; height: 10px; animation-duration: 7s; animation-delay: 4s;"></div>
-
-    <!-- SECCIÓN DE INICIO -->
+ 
+    <!-- Algas -->
+    <div class="kelp" style="left: 3%; height: 220px; animation-duration: 5s;"></div>
+    <div class="kelp" style="left: 8%; height: 320px; animation-duration: 7s; animation-delay: -2s;"></div>
+    <div class="kelp" style="right: 4%; height: 260px; animation-duration: 6s; animation-delay: -1s;"></div>
+    <div class="kelp" style="right: 10%; height: 180px; animation-duration: 4.5s; animation-delay: -3s;"></div>
+ 
+    <!-- Silueta del leviatán y aviso PDA -->
+    <div class="leviathan-shadow"></div>
+    <div class="pda-alert"><strong>Advertencia</strong><br>Criatura de gran tamaño detectada</div>
+ 
+    <!-- Plancton -->
+    <div class="plankton" style="left: 6%; top: 80%; width: 3px; height: 3px; animation-duration: 24s; animation-delay: -3s;"></div>
+    <div class="plankton" style="left: 14%; top: 45%; width: 2px; height: 2px; animation-duration: 30s; animation-delay: -10s;"></div>
+    <div class="plankton" style="left: 22%; top: 65%; width: 4px; height: 4px; animation-duration: 20s; animation-delay: -6s;"></div>
+    <div class="plankton" style="left: 31%; top: 25%; width: 2px; height: 2px; animation-duration: 34s; animation-delay: -15s;"></div>
+    <div class="plankton" style="left: 39%; top: 85%; width: 3px; height: 3px; animation-duration: 26s; animation-delay: -8s;"></div>
+    <div class="plankton" style="left: 47%; top: 50%; width: 2px; height: 2px; animation-duration: 32s; animation-delay: -20s;"></div>
+    <div class="plankton" style="left: 55%; top: 15%; width: 3px; height: 3px; animation-duration: 22s; animation-delay: -2s;"></div>
+    <div class="plankton" style="left: 63%; top: 70%; width: 4px; height: 4px; animation-duration: 28s; animation-delay: -12s;"></div>
+    <div class="plankton" style="left: 71%; top: 35%; width: 2px; height: 2px; animation-duration: 36s; animation-delay: -18s;"></div>
+    <div class="plankton" style="left: 79%; top: 60%; width: 3px; height: 3px; animation-duration: 21s; animation-delay: -5s;"></div>
+    <div class="plankton" style="left: 88%; top: 20%; width: 2px; height: 2px; animation-duration: 31s; animation-delay: -9s;"></div>
+    <div class="plankton" style="left: 94%; top: 75%; width: 4px; height: 4px; animation-duration: 25s; animation-delay: -14s;"></div>
+ 
     <section id="introduccion" class="pda-section">
         <h1>Subnautica: Supervivencia en 4546B</h1>
-        <p>Tu nave, el <strong>Aurora</strong>, ha impactado en un mundo oceánico desconocido. La cápsula salvavidas donde te encuentras es tu único refugio en la superficie para sobrevivir y escapar. Ve a <a href="https://subnautica.fandom.com/es/wiki/Subnautica_Wiki" target="_blank" style="border-bottom: 1px dashed #00ffff;">la wiki de Subnautica</a> para sacarte dudas tecnicas.</p>
+        <p>Tu nave, el <strong>Aurora</strong>, ha impactado en un mundo oceánico desconocido. La cápsula salvavidas donde te encuentras es tu único refugio en la superficie para sobrevivir y escapar. Ve a <a href="https://subnautica.fandom.com/es/wiki/Subnautica_Wiki" target="_blank" style="border-bottom: 1px dashed #00ffff;">la wiki de Subnautica</a>.</p>
     </section>
-
-    <!-- SUMARIO (ÍNDICE ESTILO PDA) -->
-    <nav class="pda-section sumario-box">
-        <h2>Índice de Datos</h2>
-        <ul>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li><a href="#arrecifes">Los Arrecifes Seguros</a></li>
-            <li><a href="#profundas">Zonas Profundas</a></li>
-            <li><a href="#vehiculos">Vehículos</a></li>
-            <li><a href="#minerales">Minerales y Recursos</a></li>
-            <li><a href="#leviatanes">Leviatanes</a></li>
-        </ul>
-    </nav>
-
-    <!-- SECCIÓN DE BIOMAS INICIALES -->
+ 
     <section id="arrecifes" class="pda-section">
-        <h2>Zona de Inmersión Inicial (0m - 300m)</h2>
-        <p>Entorno oceánico iluminado por la estrella local. Ofrece la mayor densidad de recursos básicos y biodiversidad no agresiva de 4546B.</p>
-        
-        <ul>
-            <li>
-                <strong>Arrecifes Seguros (Safe Shallows | 0 - 80m):</strong> 
-                Centro del mapa y punto de impacto de tu cápsula salvavidas. 
-                <br><em>• Recursos:</em> Piedra caliza (Titanio, Cobre), Cuarzo y Champiñones Ácidos.
-                <br><em>• Peligro:</em> Pez Explosivo (Crashfish) en túneles de coral y vainas tóxicas de Pez Gas.
-                <!-- Imagen opcional para este sub-bioma -->
-                <img src="arrecife.jpg" alt="Arrecifes Seguros" width="350">
-            </li>
-            
-            <li>
-                <strong>Bosque de Algas (Kelp Forest | 50 - 150m):</strong> 
-                Bosques sumergidos dominados por algas gigantes bioluminiscentes.
-                <br><em>• Recursos:</em> Semillas de alga, Racimos brillantes y Depósitos de Arenisca.
-                <br><em>• Peligro:</em> Acechadores (Stalkers), atraídos por el metal.
-                <img src="kelp_forest.png" alt="Bosque de Algas" width="350">
-            </li>
-            
-            <li>
-                <strong>Mesetas de Hierba (Grassy Plateaus | 50 - 170m):</strong> 
-                Grandes llanuras de arena cubiertas de vegetación roja.
-                <br><em>• Recursos:</em> Planos para el Seamoth, Estación de Modificación y Cortadora.
-                <br><em>• Peligro:</em> Tiburones de Arena (Sandsharks) en el lecho marino.
-                <img src="grassy_plateaus.jpg" alt="Mesetas de Hierba" width="350">
-            </li>
-        </ul>
+        <h2>Los Arrecifes Seguros (Safe Shallows)</h2>
+        <p>En los primeros metros bajo el agua, la luz solar ilumina el ecosistema logrando que sea colorido y lleno de recursos como <strong>titanio, cobre y cuarzo</strong> entre otros, también logrando tener especies no hostiles en esa zona.</p>
+        <img src="arrecife.jpg" alt="Arrecifes Seguros" width="400">
+        <h6>Arrecifes iniciales analizados</h6>
     </section>
-
-    <!-- SECCIÓN PROFUNDA -->
+ 
     <section id="profundas" class="pda-section">
-        <h2>Abismos y Sistemas de Cuevas (300m - 1500m+)</h2>
-        <p>Ecosistemas sin luz solar directa. Requieren vehículos presurizados, módulos térmicos y luces de alta intensidad para sobrevivir.</p>
+        <h2>Zonas Profundas</h2>
+        <p>Después de los <strong>500m</strong> se empieza a hacer peligroso, debido a que entramos a las zonas con aparición de leviatanes. La presión aumenta y la luz escasea.</p>
         
         <ul>
             <li>
                 <strong>Gran Arrecife y Cuevas (Grand Reef | 300 - 500m):</strong> 
                 Estructuras orgánicas flotantes, profundas grietas bioluminiscentes y ruinas humanas.
                 <br><em>• Datos clave:</em> Hábitat del Cangrejoserpiente (Crabsnake) y ubicación de la base abandonada Degasi. Primeras vetas de Magnetita y Litio expuesto.
-                <img src="zona_abisal.jpg" alt="Gran Arrecife" width="350">
+                <img src="gran_arrecife.jpg" alt="Gran Arrecife" width="350">
             </li>
             
             <li>
@@ -91,11 +73,11 @@
                 <strong>Zona Volcánica Inactiva y Activa (900 - 1400m+):</strong> 
                 El punto más profundo del mapa, rodeado de ríos de magma con temperaturas superiores a 700°C.
                 <br><em>• Datos clave:</em> Requiere el Prawn Suit con módulo de profundidad máximo. Fuente primordial de Kyanita y ubicación de la Instalación de Contención Primaria.
-                <img src="zona_volcanica.png" alt="Zona Volcánica" width="350">
+                <img src="zona_volcanica.jpg" alt="Zona Volcánica" width="350">
             </li>
         </ul>
     </section>
-    <!-- SECCIÓN DE VEHÍCULOS -->
+ 
     <section id="vehiculos" class="pda-section">
         <h2>Vehículos de Subnautica</h2>
         <ul class="vehicles-list">
@@ -128,8 +110,7 @@
             </li>
         </ul>
     </section>
-
-    <!-- SECCIÓN DE MINERALES -->
+ 
     <section id="minerales" class="pda-section">
         <h2>Minerales y Recursos</h2>
         <p>Materiales clave recolectados en el planeta 4546B:</p>
@@ -139,8 +120,7 @@
             <li><strong>Profundidades (400m+):</strong> Niquel, Kyanita y Uraninita (para tecnología avanzada y celdas avanzadas).</li>
         </ul>
     </section>
-
-    <!-- SECCIÓN DE LEVIATANES -->
+ 
     <section id="leviatanes" class="pda-section">
         <h2>Fauna Hostil: Leviatanes</h2>
         <p>Organismos de más de 20 metros clasificados como amenaza extrema en 4546B:</p>
@@ -162,6 +142,8 @@
             </li>
         </ul>
     </section>
-
+ 
+ 
+ 
 </body>
 </html>
